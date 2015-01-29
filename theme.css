@@ -1,0 +1,34 @@
+/* add your css Here */
+
+body {
+  	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1.5em 0;
+	margin-top: 1.5em;
+	margin-right: 0px;
+	margin-bottom: 1.5em;
+	margin-left: 0px;
+	text-align: start;
+	font-weight: 300;
+	line-height: 1.1;
+}
+
+h1 {
+	font-size: 2.6em;
+}
+
+a {
+	transition: background-color ease-in-out .15s, color ease-in-out .15s, border-color ease-in-out .15s;
+}
+
+table, th, td {
+  	style="width:100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
