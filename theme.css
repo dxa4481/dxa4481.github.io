@@ -15,6 +15,22 @@ h1, h2, h3, h4, h5, h6 {
 	line-height: 1.1;
 }
 
+.info {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 23px;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
 h1 {
 	font-size: 2.6em;
 }
@@ -30,7 +46,7 @@ a:hover {
 	color: #FFCCCC;
 }
 
-table { 
+table {
 	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
 	width: 640px; 
