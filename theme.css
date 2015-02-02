@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0.1em 0;
 	font-weight: 300;
 	line-height: 1.1;
+	font-size: 95%;
 }
 
 img {
@@ -54,15 +55,17 @@ a:hover {
 }
 
 table {
+	margin-top=10px;
 	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 90%;
+	font-size: 80%;
 	width: 750px; 
 	border-collapse: 
 	collapse; border-spacing: 0; 
 }
 
 td, th { 
+	padding: 5px;
 	border: 1px solid transparent; /* No more visible border */
 	height: 30px; 
 	transition: all 0.3s;  /* Simple transition for hover effect */
