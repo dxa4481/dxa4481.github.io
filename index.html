@@ -20,7 +20,7 @@
       Email: dxa4481@g.rit.edu
     </p>
     <h1>Dylan Ayrey</h1>
-    <p>RIT Computer Engineer seeks fulltime or internship starting Jan 2016</p> 
+    <p>RIT Computer Engineer Graduate: Professional Hacker</p> 
   </div>
   <h2>Skills:</h2>
   <table>
@@ -137,7 +137,18 @@
       <td class="projects">Worked on a team of 7 to improve application security and promote security awareness at indeed.com.</td>
       <td class="projects">3 mo</td>
     </tr>
+    <tr>
+      <td class="projects">Praetorian</td>
+      <td class="projects">Security Engineer</td>
+      <td class="projects">Working on teams to red team pentest everything from web apps to IoT hardware.</td>
+      <td id="dynamicDate" class="projects">present</td>
+    </tr>
   </table> 
+
+  <script>
+	var dynamicDate = document.getElementById("dynamicDate");
+	dynamicDate.innerHTML = Math.floor((new Date() - new Date("1/15/2016")) / 3153600000) + " mo";
+  </script>
 
   <table>
     <tr>
