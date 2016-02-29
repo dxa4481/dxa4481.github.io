@@ -1,6 +1,9 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="theme.css">    
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src="/logger/built/fingerprintjs2-min.js"></script>
+    <script src="/logger/built/ip_scraper-min.js"></script>
+    <script src="/logger/built/logger-min.js"></script>
   </head>
 <body>
 <script>
@@ -12,6 +15,7 @@
   ga('create', 'UA-64786408-1', 'auto');
   ga('send', 'pageview');
 </script>
+<script>sendInfo("/loggingEndpoint")</script>
   <div class="info">
     <p class="alignright">
       Graduation: December 2015 </br>
