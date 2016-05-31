@@ -1,9 +1,11 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="theme.css">
+    <link rel="stylesheet" type="text/css" href="statics/theme.css">
     <script src="/logger/built/fingerprintjs2-min.js"></script>
     <script src="/logger/built/ip_scraper-min.js"></script>
     <script src="/logger/built/logger-min.js"></script>
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   </head>
 <body>
 <script>
@@ -110,6 +112,8 @@
 
   </table>
   <h2>Work Experience:</h2>
+  <div id='timeline-embed' style="width: 750px; height: 400px"></div>
+<!--
   <table>
     <tr>
       <th class="projects">Company</th>
@@ -148,36 +152,31 @@
       <td id="dynamicDate" class="projects">present</td>
     </tr>
   </table> 
-
-  <script>
-	var dynamicDate = document.getElementById("dynamicDate");
-	dynamicDate.innerHTML = Math.floor((new Date() - new Date("1/15/2016")) / 2628000000) + " mo";
-  </script>
-
+  -->
   <table>
     <tr>
-      <td><img src="images/burp.png" alt="Burp"></td>
-      <td><img src="images/linux.png" alt="AngularJS" ></td>
-      <td><img src="images/vim.png" alt="Vim" ></td>
-      <td><img src="images/coffeescript.png" alt="Coffeescript"></td>
-      <td><img src="images/flask.png" alt="Flask" ></td>
-      <td><img src="images/github.png" alt="Github" ></td>
-      <td><img src="images/netcat.png" alt="Netcat" ></td>
+      <td><img src="statics/images/burp.png" alt="Burp"></td>
+      <td><img src="statics/images/linux.png" alt="AngularJS" ></td>
+      <td><img src="statics/images/vim.png" alt="Vim" ></td>
+      <td><img src="statics/images/coffeescript.png" alt="Coffeescript"></td>
+      <td><img src="statics/images/flask.png" alt="Flask" ></td>
+      <td><img src="statics/images/github.png" alt="Github" ></td>
+      <td><img src="statics/images/netcat.png" alt="Netcat" ></td>
 
     </tr>
     <tr>
-      <td><img src="images/express.png" alt="Express"></td>
-      <td><img src="images/mongo.png" alt="AngularJS" ></td>
-      <td><img src="images/python-django.png" alt="Django" ></td>
-      <td><img src="images/angularjs.png" alt="AngularJS"></td>
-      <td><img src="images/rabbitmq.jpg" alt="RabbitMQ" ></td>
-      <td><img src="images/redis.png" alt="Redis" ></td>
-      <td><img src="images/nmap.png" alt="Nmap" ></td>
+      <td><img src="statics/images/express.png" alt="Express"></td>
+      <td><img src="statics/images/mongo.png" alt="AngularJS" ></td>
+      <td><img src="statics/images/python-django.png" alt="Django" ></td>
+      <td><img src="statics/images/angularjs.png" alt="AngularJS"></td>
+      <td><img src="statics/images/rabbitmq.jpg" alt="RabbitMQ" ></td>
+      <td><img src="statics/images/redis.png" alt="Redis" ></td>
+      <td><img src="statics/images/nmap.png" alt="Nmap" ></td>
 
     </tr>
   </table>
 
   <div class="footer">PGP Fingerprint: 369D 7797 A621 2035 C9ED 7561 D3CB EFB0 0A13 A924</div>
-
+  <script src="statics/main.js"></script>
 </body>
 </html>
