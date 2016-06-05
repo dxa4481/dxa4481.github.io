@@ -9,11 +9,37 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 	line-height: 1.1;
 	font-size: 95%;
-	width: 750px;
+	width: 60%;
 	font-weight: bold;
+        cursor: pointer;
 }
 
-img {
+.markdown {
+        float: right;
+        width: 38%;
+}
+
+.toggle{
+        -webkit-transition: linear 0.3s;
+        -moz-transition: linear 0.3s;
+        -ms-transition: linear 0.3s;
+        -o-transition: linear 0.3s;
+        transition: linear 0.3s;
+}
+.toggle.ng-enter{
+        opacity: 0;
+}
+.toggle.ng-enter-active{
+        opacity: 1;
+}
+.toggle.ng-leave{
+        opacity: 1;
+}
+.toggle.ng-leave-active{
+        opacity: 0;
+}
+
+.logos {
 	width:50px;
 }
 
@@ -24,7 +50,7 @@ img {
 }
 
 .info {
-	width: 750px;
+	width: 60%;
 	text-align:left;
 }
 
@@ -61,7 +87,8 @@ table {
 	color: #333;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 77%;
-	width: 750px; 
+        table-layout:fixed;
+	width: 60%; 
 	border-collapse: 
 	collapse; border-spacing: 0; 
 }
@@ -79,6 +106,7 @@ th {
 }
 
 td {
+        word-wrap:break-word;
 	background: #FAFAFA;
 	text-align: center;
 }

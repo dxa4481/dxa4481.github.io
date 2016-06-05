@@ -16,7 +16,8 @@ var getTimelineData = function(){
                 },
                 text: { 
                     text: "Worked on a team of four to design the backend for two restful APIs in NodeJS.</br> Worked on embeded linux systems.",
-                    headline: "Enernoc:</br>Software Engineer Intern"
+                    headline: "Enernoc:</br>Software Engineer Intern",
+                    company: "Enernoc"
                 }
             },
             {
@@ -34,7 +35,8 @@ var getTimelineData = function(){
                 },
                 text: { 
                     text: "Worked in a group of 3 with Bitcoin technology to build out a web application</br> in Python",
-                    headline: "Anvil & Gear:</br>Software Engineer Contractor"
+                    headline: "Anvil & Gear:</br>Software Engineer Contractor",
+                    company: "Anvil & Gear"
                 }
             },
             {
@@ -52,7 +54,8 @@ var getTimelineData = function(){
                 },
                 text: { 
                     text: "Worked in teams of two and three to perform penatration tests and code reviews</br> for high profile clients",
-                    headline: "Security Innovation:</br>Security Engineer Intern"
+                    headline: "Security Innovation:</br>Security Engineer Intern",
+                    company: "Security Innovation"
                 }
             },
             {
@@ -70,7 +73,8 @@ var getTimelineData = function(){
                 },
                 text: { 
                     text: "Worked on a team of 7 to improve application security and promote security</br> awareness at indeed.com",
-                    headline: "indeed.com:</br>Security Engineer Intern"
+                    headline: "indeed.com:</br>Security Engineer Intern",
+                    company: "indeed.com"
                 }
             },
             {
@@ -88,7 +92,8 @@ var getTimelineData = function(){
                 },
                 text: { 
                     text: "Working on teams to perform red team penatration testing on web applications, </br>internal networks, external networks, and IoT devices",
-                    headline: "Praetorian (current):</br>Security Engineer"
+                    headline: "Praetorian (current):</br>Security Engineer",
+                    company: "Praetorian"
                 }
             },
             {
@@ -100,9 +105,12 @@ var getTimelineData = function(){
                     year: 2015,
                     month: 12
                 },
+                background: {
+                    color: "#0f9bd1"
+                },
                 text: { 
                     text: "Earned a bachelors of science degree in Computer Engineering.",
-                    headline: "Rochester Institute of Technology"
+                    headline: "<h4>Rochester Institute of Technology Student</h4>"
                 }
             }
         ],

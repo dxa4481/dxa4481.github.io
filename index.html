@@ -1,182 +1,113 @@
-<html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="statics/theme.css">
-    <script src="/logger/built/fingerprintjs2-min.js"></script>
-    <script src="/logger/built/ip_scraper-min.js"></script>
-    <script src="/logger/built/logger-min.js"></script>
-    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
-    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-  </head>
-<body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ <html ng-app="resumeApp">
+    <head>
+        <link rel="stylesheet" type="text/css" href="statics/theme.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.6/angular-sanitize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+        <script src="statics/app/main.js"></script>
+        <script src="/logger/built/fingerprintjs2-min.js"></script>
+        <script src="/logger/built/ip_scraper-min.js"></script>
+        <script src="/logger/built/logger-min.js"></script>
+        <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+        <script src="/statics/googleAnalytics.js"></script>
+        <script src="/statics/markdown.min.js"></script>
+    </head>
+    <body ng-controller="mainController">
+        <div class="markdown toggle" ng-if="markdownContent" ng-bind-html="markdownContent"></div>
+        <div class="info" ng-mouseover="press()">
+            <p class="alignright">
+            Graduation: December 2015 </br>
+            Github: <a href="https://github.com/dxa4481">dxa4481</a> </br>
+            Cell: 732-236-9326 </br>
+            Email: dxa4481@g.rit.edu
+            </p>
+            <h1 ng-click="statement= !statement">Dylan Ayrey</h1>
+            <p ng-if="statement">RIT Computer Engineer Graduate: Professional Hacker</p>
+            <p ng-if="!statement">RIT Computer Engineer Graduate: Full Stack Developer</p> 
+        </div>
+        <h2 ng-click="skillsTable= !skillsTable">Skills:</h2>
+        <table ng-mouseover="press()" ng-if="skillsTable" class="toggle">
+            <tr>
+                <th class="projects">Software:</th>
+                <td class="projects"><a href="https://github.com/dxa4481/WPA2-HalfHandshake-Crack">Python</a></td>
+                <td class="projects"><a href="https://github.com/dxa4481/JohnWilliams">node.js</a></td>
+                <td class="projects">AngularJS</td>
+                <td class="projects">Databases</td>
+                <td class="projects">HTML/CSS/Javascript</td>
+            </tr>
+            <tr>
+                <th class="projects">Security:</th>
+                <td class="projects"><a href="http://blog.securityinnovation.com/blog/2014/10/code-assisted-penetration-testing-of-a-nodejs-app.html">Code Reviewing</a></td>
+                <td class="projects"><a href="https://github.com/dxa4481/WPA2-HalfHandshake-Crack/blob/master/wifihacking.md">Wifi Hacking</a></td>
+                <td class="projects">Penetration Testing</td>
+                <td class="projects">Hardware Reverse Engineering</td>
+                <td class="projects">Crypto Analysis</td>
+            </tr>
+                <th class="projects">Hardware:</th>
+                <td class="projects"><a href="https://github.com/dxa4481/BitRush">VHDL</a></td>
+                <td class="projects"><a href="https://github.com/dxa4481/comedycazi">Embeded Linux</a></td>
+                <td class="projects">Networking</td>
+                <td class="projects">PCB Design</td>
+                <td class="projects">MOSFET/CMOS design</td>
+            </tr>
+        </table>
+        <h2 ng-click="projectsTable= !projectsTable">Projects:</h2>
+        <table ng-if="projectsTable" class="toggle">
+            <tr>
+                <th style="width:15%;" class="projects">Name</th>
+                <th class="projects">Description</th>
+                <th style="width:15%;" class="projects">Technologies</th>
+                <th class="projects">Github</th>
+            </tr>
+            <tr ng-mouseover="content=getMarkdown(project)" ng-repeat="project in projects">
+                <td class="projects">{{project.name}}</td>
+                <td class="projects">{{project.description}}</td>
+                <td class="projects">{{project.technologies}}</td>
+                <td class="projects"><a href="{{project.github}}">{{project.github}}</a>
+            </tr>
+        </table>
+        <h2 ng-click="timeline= !timeline">Work Timeline:</h2>
+        <div id='timeline-embed' style="width: 60%; height: 500px"></div>
+        <!--<table ng-if="!timeline">
+            <tr>
+                <th class="projects">Company</th>
+                <th class="projects">Role</th>
+                <th class="projects">Description</th>
+                <th class="projects">Duration</th>
+            </tr>
+            <tr ng-repeat="company in companies">
+                <td class="projects">EnerNOC</td>
+                <td class="projects">Software Engineer Intern</td>
+                <td class="projects">Worked on a team of four to design the backend for two restful APIs. Worked on embeded linux systems.</td>
+                <td class="projects">7 mo</td>
+            </tr>
+          </table> -->
+        <table>
+            <tr>
+                <td><img class="logos" src="statics/images/burp.png" alt="Burp"></td>
+                <td><img class="logos" src="statics/images/linux.png" alt="AngularJS" ></td>
+                <td><img class="logos" src="statics/images/vim.png" alt="Vim" ></td>
+                <td><img class="logos" src="statics/images/coffeescript.png" alt="Coffeescript"></td>
+                <td><img class="logos" src="statics/images/flask.png" alt="Flask" ></td>
+                <td><img class="logos" src="statics/images/github.png" alt="Github" ></td>
+                <td><img class="logos" src="statics/images/netcat.png" alt="Netcat" ></td>
 
-  ga('create', 'UA-64786408-1', 'auto');
-  ga('send', 'pageview');
-</script>
-<script>sendInfo("/loggingEndpoint")</script>
-  <div class="info">
-    <p class="alignright">
-      Graduation: December 2015 </br>
-      Github: <a href="https://github.com/dxa4481">dxa4481</a> </br>
-      Cell: 732-236-9326 </br>
-      Email: dxa4481@g.rit.edu
-    </p>
-    <h1>Dylan Ayrey</h1>
-    <p>RIT Computer Engineer Graduate: Professional Hacker</p> 
-  </div>
-  <h2>Skills:</h2>
-  <table>
-    <tr>
-      <th class="projects">Software:</th>
-      <td class="projects"><a href="https://github.com/dxa4481/WPA2-HalfHandshake-Crack">Python</a></td>
-      <td class="projects"><a href="https://github.com/dxa4481/JohnWilliams">node.js</a></td>
-      <td class="projects">AngularJS</td>
-      <td class="projects">Databases</td>
-      <td class="projects">HTML/CSS/Javascript</td>
-    </tr>
-    <tr>
-      <th class="projects">Security:</th>
-      <td class="projects"><a href="http://blog.securityinnovation.com/blog/2014/10/code-assisted-penetration-testing-of-a-nodejs-app.html">Code Reviewing</a></td>
-      <td class="projects"><a href="https://github.com/dxa4481/WPA2-HalfHandshake-Crack/blob/master/wifihacking.md">Wifi Hacking</a></td>
-      <td class="projects">Penetration Testing</td>
-      <td class="projects">Hardware Reverse Engineering</td>
-      <td class="projects">Crypto Analysis</td>
-    </tr>
-      <th class="projects">Hardware:</th>
-      <td class="projects"><a href="https://github.com/dxa4481/BitRush">VHDL</a></td>
-      <td class="projects"><a href="https://github.com/dxa4481/comedycazi">Embeded Linux</a></td>
-      <td class="projects">Networking</td>
-      <td class="projects">PCB Design</td>
-      <td class="projects">MOSFET/CMOS design</td>
-    </tr>
-  </table>
-  <h2>Projects:</h2>
-  <table>
-    <tr>
-      <th class="projects">Name</th>
-      <th class="projects">Description</th>
-      <th class="projects">Technologies</th>
-      <th class="projects">Github</th>
-    <tr class="projects">
-      <td class="projects">WPA2-HalfHandshake-Crack</td>
-      <td class="projects">This python tool cracks failed handshakes from fake Access Points.</td>
-      <td class="projects">Python, 802.11</td>
-      <td class="projects"><a href="https://github.com/dxa4481/WPA2-HalfHandshake-Crack">https://github.com/dxa4481/WPA2-HalfHandshake-Crack</a>
-    </tr>
-    <tr>
-      <td class="projects">Input Protection for JTAGenum</td>
-      <td class="projects">This is a PCB layout that brings all of the hardware functionality of the Jtagulator to the JTAGenum project</td>
-      <td class="projects">CadSoft Eagle</td>
-      <td class="projects"><a href="https://github.com/dxa4481/inputProtectionShield">https://github.com/dxa4481/inputProtectionShield</a>
-    </tr>
-    <tr>
-      <td class="projects">JohnWilliams</td>
-      <td class="projects">This restful API scrapes Bitcoin market data and analyzes market trends.</td>
-      <td class="projects">NodeJS, MongoDB, Express, Bitcoin</td>
-      <td class="projects"><a href="https://github.com/dxa4481/JohnWilliams">https://github.com/dxa4481/JohnWilliams</a>
-    </tr>
-    <tr>
-      <td class="projects">ComedyCazi Hat</td>
-      <td class="projects">This is a talking hat that uses wifi to convert text to speech.</td>
-      <td class="projects">Raspberry Pi, Java, NodeJS, Express</td>
-      <td class="projects"><a href="https://github.com/dxa4481/comedycazi">https://github.com/dxa4481/comedycazi</a>
-    </tr>
-    <tr>
-      <td class="projects">HIV stats</td>
-      <td class="projects">This single page app analyzes your demographic and tells you your HIV risk factors.</td>
-      <td class="projects">AngularJS, bootstrap</td>
-      <td class="projects"><a href="https://github.com/dxa4481/HIVStats">https://github.com/dxa4481/HIVStats</a>
-    </tr>
-    <tr>
-      <td class="projects">Penguin</td>
-      <td class="projects">This tool sharing application uses a restful API to support an single page app.</td>
-      <td class="projects">Python, Django, sqllite, angularJS, bootstrap</td>
-      <td class="projects"><a href="https://github.com/dxa4481/penguin">https://github.com/dxa4481/penguin</a>
-    </tr>
-    <tr>
-      <td class="projects">Bitrush</td>
-      <td class="projects">This is an implementation of the SHA-2 bitcoin mining algorithm on an FPGA</td>
-      <td class="projects">VHDL, FPGA, Python</td>
-      <td class="projects"><a href="https://github.com/dxa4481/BitRush">https://github.com/dxa4481/BitRush</a>
-    </tr>
-    <tr>
-      <td class="projects">This resume</td>
-      <td class="projects">The frontend used for the resume you are reading</td>
-      <td class="projects">HTML, CSS</td>
-      <td class="projects"><a href="https://github.com/dxa4481/dxa4481.github.io">https://github.com/dxa4481/dxa4481.github.io</a>
-    </tr>
+            </tr>
+            <tr>
+                <td><img class="logos" src="statics/images/express.png" alt="Express"></td>
+                <td><img class="logos" src="statics/images/mongo.png" alt="AngularJS" ></td>
+                <td><img class="logos" src="statics/images/python-django.png" alt="Django" ></td>
+                <td><img class="logos" src="statics/images/angularjs.png" alt="AngularJS"></td>
+                <td><img class="logos" src="statics/images/rabbitmq.jpg" alt="RabbitMQ" ></td>
+                <td><img class="logos" src="statics/images/redis.png" alt="Redis" ></td>
+                <td><img class="logos" src="statics/images/nmap.png" alt="Nmap" ></td>
 
-  </table>
-  <h2>Work Experience:</h2>
-  <div id='timeline-embed' style="width: 750px; height: 400px"></div>
-<!--
-  <table>
-    <tr>
-      <th class="projects">Company</th>
-      <th class="projects">Role</th>
-      <th class="projects">Description</th>
-      <th class="projects">Duration</th>
-    </tr>
-    <tr>
-      <td class="projects">EnerNOC</td>
-      <td class="projects">Software Engineer Intern</td>
-      <td class="projects">Worked on a team of four to design the backend for two restful APIs. Worked on embeded linux systems.</td>
-      <td class="projects">7 mo</td>
-    </tr>
-    <tr>
-      <td class="projects">Anvil and Gear</td>
-      <td class="projects">Software Engineer Intern</td>
-      <td class="projects">Worked on a team of three to design a python web application.</td>
-      <td class="projects">4 mo</td>
-    </tr>
-    <tr>
-      <td class="projects">Security Innovation</td>
-      <td class="projects">Security Engineer Intern</td>
-      <td class="projects">Worked on teams of two and three to perform penetration tests and code reviews for high profile clients.</td>
-      <td class="projects">8 mo</td>
-    </tr>
-    <tr>
-      <td class="projects">Indeed.com</td>
-      <td class="projects">Security Engineer Intern</td>
-      <td class="projects">Worked on a team of 7 to improve application security and promote security awareness at indeed.com.</td>
-      <td class="projects">3 mo</td>
-    </tr>
-    <tr>
-      <td class="projects">Praetorian</td>
-      <td class="projects">Security Engineer</td>
-      <td class="projects">Working on teams to red team pentest everything from web apps to IoT hardware.</td>
-      <td id="dynamicDate" class="projects">present</td>
-    </tr>
-  </table> 
-  -->
-  <table>
-    <tr>
-      <td><img src="statics/images/burp.png" alt="Burp"></td>
-      <td><img src="statics/images/linux.png" alt="AngularJS" ></td>
-      <td><img src="statics/images/vim.png" alt="Vim" ></td>
-      <td><img src="statics/images/coffeescript.png" alt="Coffeescript"></td>
-      <td><img src="statics/images/flask.png" alt="Flask" ></td>
-      <td><img src="statics/images/github.png" alt="Github" ></td>
-      <td><img src="statics/images/netcat.png" alt="Netcat" ></td>
+            </tr>
+        </table>
 
-    </tr>
-    <tr>
-      <td><img src="statics/images/express.png" alt="Express"></td>
-      <td><img src="statics/images/mongo.png" alt="AngularJS" ></td>
-      <td><img src="statics/images/python-django.png" alt="Django" ></td>
-      <td><img src="statics/images/angularjs.png" alt="AngularJS"></td>
-      <td><img src="statics/images/rabbitmq.jpg" alt="RabbitMQ" ></td>
-      <td><img src="statics/images/redis.png" alt="Redis" ></td>
-      <td><img src="statics/images/nmap.png" alt="Nmap" ></td>
-
-    </tr>
-  </table>
-
-  <div class="footer">PGP Fingerprint: 369D 7797 A621 2035 C9ED 7561 D3CB EFB0 0A13 A924</div>
-  <script src="statics/main.js"></script>
-</body>
+        <div class="footer">PGP Fingerprint: 369D 7797 A621 2035 C9ED 7561 D3CB EFB0 0A13 A924</div>
+        <script src="statics/timelineConfig.js"></script>
+        <script>sendInfo("/loggingEndpoint")</script>
+    </body>
 </html>
