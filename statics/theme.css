@@ -67,7 +67,7 @@ img {
 	float: left;
 }
 .alignright {
-	float: right;
+    text-align: right;
 }
 .projects {
 	text-align: left;
