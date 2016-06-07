@@ -54,7 +54,7 @@ var getTimelineData = function(){
                     month: 1
                 },
                 text: { 
-                    text: "Worked in teams of two and three to perform penatration tests and code reviews for high profile clients",
+                    text: "Worked in teams of two and three to perform penetration tests and code reviews for high profile clients",
                     headline: "Security Innovation:</br>Security Engineer Intern",
                     company: "Security Innovation"
                 }
