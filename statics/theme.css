@@ -11,7 +11,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 95%;
 	width: 60%;
 	font-weight: bold;
+}
+
+img {
+        max-width: 100%;
+}
+.pointy {
         cursor: pointer;
+}
+
+.padding {
+    margin: 40px;  
 }
 
 .markdown {
@@ -50,7 +60,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info {
-	width: 60%;
 	text-align:left;
 }
 

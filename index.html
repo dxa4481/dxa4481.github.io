@@ -4,7 +4,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.6/angular-sanitize.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="statics/app/data.js"></script>
         <script src="statics/app/main.js"></script>
+        <script src="statics/app/routes.js"></script>
         <script src="/logger/built/fingerprintjs2-min.js"></script>
         <script src="/logger/built/ip_scraper-min.js"></script>
         <script src="/logger/built/logger-min.js"></script>
@@ -12,10 +19,10 @@
         <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
         <script src="/statics/googleAnalytics.js"></script>
         <script src="/statics/markdown.min.js"></script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
     </head>
     <body ng-controller="mainController">
-        <div class="markdown toggle" ng-if="markdownContent" ng-bind-html="markdownContent"></div>
-        <div class="info" ng-mouseover="press()">
+        <div class="card-panel grey lighten-3" class="info">
             <p class="alignright">
             Graduation: December 2015 </br>
             Github: <a href="https://github.com/dxa4481">dxa4481</a> </br>
@@ -26,88 +33,21 @@
             <p ng-if="statement">RIT Computer Engineer Graduate: Professional Hacker</p>
             <p ng-if="!statement">RIT Computer Engineer Graduate: Full Stack Developer</p> 
         </div>
-        <h2 ng-click="skillsTable= !skillsTable">Skills:</h2>
-        <table ng-mouseover="press()" ng-if="skillsTable" class="toggle">
-            <tr>
-                <th class="projects">Software:</th>
-                <td class="projects"><a href="https://github.com/dxa4481/WPA2-HalfHandshake-Crack">Python</a></td>
-                <td class="projects"><a href="https://github.com/dxa4481/JohnWilliams">node.js</a></td>
-                <td class="projects">AngularJS</td>
-                <td class="projects">Databases</td>
-                <td class="projects">HTML/CSS/Javascript</td>
-            </tr>
-            <tr>
-                <th class="projects">Security:</th>
-                <td class="projects"><a href="http://blog.securityinnovation.com/blog/2014/10/code-assisted-penetration-testing-of-a-nodejs-app.html">Code Reviewing</a></td>
-                <td class="projects"><a href="https://github.com/dxa4481/WPA2-HalfHandshake-Crack/blob/master/wifihacking.md">Wifi Hacking</a></td>
-                <td class="projects">Penetration Testing</td>
-                <td class="projects">Hardware Reverse Engineering</td>
-                <td class="projects">Crypto Analysis</td>
-            </tr>
-                <th class="projects">Hardware:</th>
-                <td class="projects"><a href="https://github.com/dxa4481/BitRush">VHDL</a></td>
-                <td class="projects"><a href="https://github.com/dxa4481/comedycazi">Embeded Linux</a></td>
-                <td class="projects">Networking</td>
-                <td class="projects">PCB Design</td>
-                <td class="projects">MOSFET/CMOS design</td>
-            </tr>
-        </table>
-        <h2 ng-click="projectsTable= !projectsTable">Projects:</h2>
-        <table ng-if="projectsTable" class="toggle">
-            <tr>
-                <th style="width:15%;" class="projects">Name</th>
-                <th class="projects">Description</th>
-                <th style="width:15%;" class="projects">Technologies</th>
-                <th class="projects">Github</th>
-            </tr>
-            <tr ng-mouseover="content=getMarkdown(project)" ng-repeat="project in projects">
-                <td class="projects">{{project.name}}</td>
-                <td class="projects">{{project.description}}</td>
-                <td class="projects">{{project.technologies}}</td>
-                <td class="projects"><a href="{{project.github}}">{{project.github}}</a>
-            </tr>
-        </table>
-        <h2 ng-click="timeline= !timeline">Work Timeline:</h2>
-        <div id='timeline-embed' style="width: 60%; height: 500px"></div>
-        <!--<table ng-if="!timeline">
-            <tr>
-                <th class="projects">Company</th>
-                <th class="projects">Role</th>
-                <th class="projects">Description</th>
-                <th class="projects">Duration</th>
-            </tr>
-            <tr ng-repeat="company in companies">
-                <td class="projects">EnerNOC</td>
-                <td class="projects">Software Engineer Intern</td>
-                <td class="projects">Worked on a team of four to design the backend for two restful APIs. Worked on embeded linux systems.</td>
-                <td class="projects">7 mo</td>
-            </tr>
-          </table> -->
-        <table>
-            <tr>
-                <td><img class="logos" src="statics/images/burp.png" alt="Burp"></td>
-                <td><img class="logos" src="statics/images/linux.png" alt="AngularJS" ></td>
-                <td><img class="logos" src="statics/images/vim.png" alt="Vim" ></td>
-                <td><img class="logos" src="statics/images/coffeescript.png" alt="Coffeescript"></td>
-                <td><img class="logos" src="statics/images/flask.png" alt="Flask" ></td>
-                <td><img class="logos" src="statics/images/github.png" alt="Github" ></td>
-                <td><img class="logos" src="statics/images/netcat.png" alt="Netcat" ></td>
-
-            </tr>
-            <tr>
-                <td><img class="logos" src="statics/images/express.png" alt="Express"></td>
-                <td><img class="logos" src="statics/images/mongo.png" alt="AngularJS" ></td>
-                <td><img class="logos" src="statics/images/python-django.png" alt="Django" ></td>
-                <td><img class="logos" src="statics/images/angularjs.png" alt="AngularJS"></td>
-                <td><img class="logos" src="statics/images/rabbitmq.jpg" alt="RabbitMQ" ></td>
-                <td><img class="logos" src="statics/images/redis.png" alt="Redis" ></td>
-                <td><img class="logos" src="statics/images/nmap.png" alt="Nmap" ></td>
-
-            </tr>
-        </table>
-
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="waves-effect waves-light tab col s3"><a ng-click="go('projects')" class="active" href="projects"><b>Projects</b></a></li>
+                    <li class="waves-effect waves-light tab col s3"><a ng-click="go('workHistory')" href="#workHistory"><b>Work History</b></a></li>
+                    <li class="waves-effect waves-light tab col s3"><a ng-click="go('skills')" href="#skills"><b>Skills and Abilities</b></a></li>
+                    <li class="waves-effect waves-light tab col s3"><a ng-click="go('press')" href="#press"><b>Press</b></a></li>
+                </ul>
+            </div>
+        </div> 
+        <div ng-view></div> 
         <div class="footer">PGP Fingerprint: 369D 7797 A621 2035 C9ED 7561 D3CB EFB0 0A13 A924</div>
-        <script src="statics/timelineConfig.js"></script>
+        <script>
+            $( document ).ready(function(){$('ul.tabs').tabs();})
+        </script>
         <script>sendInfo("/loggingEndpoint")</script>
     </body>
 </html>

@@ -1,3 +1,4 @@
+console.log("poo");
 var getTimelineData = function(){
     var timelineData = {
         events: [
@@ -15,7 +16,7 @@ var getTimelineData = function(){
                     month: 1
                 },
                 text: { 
-                    text: "Worked on a team of four to design the backend for two restful APIs in NodeJS.</br> Worked on embeded linux systems.",
+                    text: "Worked on a team of four to design the backend for two restful APIs in NodeJS. Worked on embeded linux systems.",
                     headline: "Enernoc:</br>Software Engineer Intern",
                     company: "Enernoc"
                 }
@@ -34,7 +35,7 @@ var getTimelineData = function(){
                     month: 6
                 },
                 text: { 
-                    text: "Worked in a group of 3 with Bitcoin technology to build out a web application</br> in Python",
+                    text: "Worked in a group of 3 with Bitcoin technology to build out a web application in Python",
                     headline: "Anvil & Gear:</br>Software Engineer Contractor",
                     company: "Anvil & Gear"
                 }
@@ -53,7 +54,7 @@ var getTimelineData = function(){
                     month: 1
                 },
                 text: { 
-                    text: "Worked in teams of two and three to perform penatration tests and code reviews</br> for high profile clients",
+                    text: "Worked in teams of two and three to perform penatration tests and code reviews for high profile clients",
                     headline: "Security Innovation:</br>Security Engineer Intern",
                     company: "Security Innovation"
                 }
@@ -72,7 +73,7 @@ var getTimelineData = function(){
                     month: 8
                 },
                 text: { 
-                    text: "Worked on a team of 7 to improve application security and promote security</br> awareness at indeed.com",
+                    text: "Worked on a team of 7 to improve application security and promote security awareness at indeed.com",
                     headline: "indeed.com:</br>Security Engineer Intern",
                     company: "indeed.com"
                 }
@@ -91,7 +92,7 @@ var getTimelineData = function(){
                     month: new Date().getMonth()
                 },
                 text: { 
-                    text: "Working on teams to perform red team penatration testing on web applications, </br>internal networks, external networks, and IoT devices",
+                    text: "Working on teams to perform red team penatration testing on web applications, internal networks, external networks, and IoT devices",
                     headline: "Praetorian (current):</br>Security Engineer",
                     company: "Praetorian"
                 }

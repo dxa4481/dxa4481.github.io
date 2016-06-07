@@ -1,0 +1,26 @@
+<table class="toggle">
+    <tr>
+        <th style="width:15%;" class="projects">Name</th>
+        <th class="projects">Description</th>
+        <th style="width:15%;" class="projects">Technologies</th>
+        <th class="projects">Github</th>
+    </tr>
+    <tr class="pointy" ng-click="loadReadme(project)" ng-repeat="project in projects">
+        <td class="projects">{{project.name}}</td>
+        <td class="projects">{{project.description}}</td>
+        <td class="projects">{{project.technologies}}</td>
+        <td class="projects"><a href="{{project.github}}">{{project.github}}</a></td>
+    </tr>
+</table>
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div ng-bind-html="markdownContent"></div>
+    </div>
+</div>
+      
+<script>
+    $(document).ready(function(){
+        $('.modal-trigger').leanModal();
+    });
+    
+</script>
