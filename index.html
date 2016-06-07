@@ -22,16 +22,18 @@
         <script async defer src="https://buttons.github.io/buttons.js"></script>
     </head>
     <body ng-controller="mainController">
-        <div class="card-panel grey lighten-3" class="info">
-            <p class="alignright">
-            Graduation: December 2015 </br>
+        <div class="card-panel grey lighten-3 row" class="info">
+            <div class="container col s6">
+                <h2 ng-click="statement= !statement">Dylan Ayrey</h2>
+                <p ng-if="statement">RIT Computer Engineer Graduate: Professional Hacker</p>
+                <p ng-if="!statement">RIT Computer Engineer Graduate: Full Stack Developer</p> 
+            </div>
+            <p class="alignright container col s4 offset-s2">
+            Graduated: December 2015 </br>
             Github: <a href="https://github.com/dxa4481">dxa4481</a> </br>
             Cell: 732-236-9326 </br>
             Email: dxa4481@g.rit.edu
             </p>
-            <h1 ng-click="statement= !statement">Dylan Ayrey</h1>
-            <p ng-if="statement">RIT Computer Engineer Graduate: Professional Hacker</p>
-            <p ng-if="!statement">RIT Computer Engineer Graduate: Full Stack Developer</p> 
         </div>
         <div class="row">
             <div class="col s12">
