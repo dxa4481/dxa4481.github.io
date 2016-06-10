@@ -5,10 +5,10 @@
         <th style="width:15%;" class="projects">Technologies</th>
         <th class="projects">Github</th>
     </tr>
-    <tr class="pointy" ng-click="loadReadme(project)" ng-repeat="project in projects">
-        <td class="projects">{{project.name}}</td>
-        <td class="projects">{{project.description}}</td>
-        <td class="projects">{{project.technologies}}</td>
+    <tr class="pointy" ng-repeat="project in projects">
+        <td class="projects" ng-click="loadReadme(project)">{{project.name}}</td>
+        <td class="projects" ng-click="loadReadme(project)">{{project.description}}</td>
+        <td class="projects" ng-click="loadReadme(project)">{{project.technologies}}</td>
         <td class="projects"><a href="{{project.github}}">{{project.github}}</a></td>
     </tr>
 </table>
