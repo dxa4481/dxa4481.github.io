@@ -59,7 +59,7 @@ var projects = [{
     },{
         name: "This resume",
         description: "The frontend used for the resume you are reading.",
-        technologies: "VHDL, FPGA, Python",
+        technologies: "Javascript, CSS, HTML",
         github: "https://github.com/dxa4481/dxa4481.github.io"
 }]
 
