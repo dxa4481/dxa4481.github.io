@@ -89,7 +89,7 @@ var getTimelineData = function(){
                 },
                 end_date: {
                     year: new Date().getFullYear(),
-                    month: new Date().getMonth()
+                    month: new Date().getMonth() + 1
                 },
                 text: { 
                     text: "Working on teams to perform red team penatration testing on web applications, internal networks, external networks, and IoT devices",
