@@ -11,3 +11,8 @@
 9. [Sophos Naked Security: Why you cant trust things you cut and paste from web pages](https://nakedsecurity.sophos.com/2016/05/26/why-you-cant-trust-things-you-cut-and-paste-from-web-pages/)
 10. [The Register: Pastejack attack turns your clipboard into a threat](http://www.theregister.co.uk/2016/05/25/pastejack%5fattack%5fturns%5fyour%5fclipboard%5finto%5fa%5fvector/?mt=1465079900698)
 11. [Cyber Defense Magazine: Pastejacking attack relies on your clipboard as an attack vector](http://www.cyberdefensemagazine.com/pastejacking-attack-relies-on-your-clipboard-as-an-attack-vector/)
+12. [Truffle Hog Finds Security Keys Hidden Github Code](http://windowsitpro.com/security/truffle-hog-finds-security-keys-hidden-github-code)
+13. [Trufflehog Sniffs Github for Secret Keys](https://hackaday.com/2017/01/13/trufflehog-sniffs-github-for-secret-keys/)
+14. [Git Hound Truffle Hog Root Out Github Leaks](http://www.infoworld.com/article/3155904/security/git-hound-truffle-hog-root-out-github-leaks.html)
+15. [Trufflehog Hacker Publishes Secret Key Spotted to Github](http://www.theinquirer.net/inquirer/news/3002198/trufflehog-hacker-publishes-secret-key-spotted-to-github)
+16. [Github Secret finder Released to the Public](http://www.zdnet.com/article/trufflehog-high-entropy-key-hunter-released-to-the-masses/)
