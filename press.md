@@ -19,3 +19,4 @@
 17. [Bleeping Computer: New security attack xssjacking combines clickjacking pastejacking and selfxss](https://www.bleepingcomputer.com/news/security/new-attack-xssjacking-combines-clickjacking-pastejacking-and-self-xss/)
 18. [Securityweek: New attack combines selfxss and clickjacking](http://www.securityweek.com/new-attack-combines-self-xss-and-clickjacking)
 19. [Security Newspaper: New attack xssjacking combines clickjacking pastejacking and selfxss](http://www.securitynewspaper.com/2017/03/25/new-attack-xssjacking-combines-clickjacking-pastejacking-self-xss/)
+20. [Gbhackers: New attack called xssjacking discovered that combined of clickjacking pastejacking and self-xss attacks](https://gbhackers.com/new-attack-called-xssjackingdiscovered-that-combined-of-clickjacking-pastejacking-and-self-xss-attacks/)
