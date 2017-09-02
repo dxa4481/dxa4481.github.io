@@ -88,11 +88,11 @@ var getTimelineData = function(){
                     month: 1
                 },
                 end_date: {
-                    year: new Date().getFullYear(),
-                    month: new Date().getMonth() + 1
+                    year: 2016,
+                    month: 7
                 },
                 text: { 
-                    text: "Working on teams to perform red team penatration testing on web applications, internal networks, external networks, and IoT devices",
+                    text: "Worked on teams to perform red team penatration testing on web applications, internal networks, external networks, and IoT devices",
                     headline: "Praetorian (current):</br>Security Engineer",
                     company: "Praetorian"
                 }
