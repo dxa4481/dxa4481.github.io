@@ -93,7 +93,7 @@ var getTimelineData = function(){
                 },
                 text: { 
                     text: "Worked on teams to perform red team penatration testing on web applications, internal networks, external networks, and IoT devices",
-                    headline: "Praetorian (current):</br>Security Engineer",
+                    headline: "Praetorian:</br>Security Engineer",
                     company: "Praetorian"
                 }
             },
