@@ -4,7 +4,7 @@ resumeApp.controller('mainController', function($scope, $http, $location) {
     $scope.go = function(path){
         $location.path(path);
     }
-    $scope.go('/projects')
+    $scope.go('/press')
 
 });
 
