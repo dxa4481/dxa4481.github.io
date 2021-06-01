@@ -1,13 +1,13 @@
 ### Press 
 
 
-1.[Softpedia: Pastejacking attack overides your clipboard to trick you into running evil code](http://news.softpedia.com/news/pastejacking-attack-overrides-your-clipboard-to-trick-you-into-running-evil-code-504420.shtml)
-2.[Boing Boing: Pastejacking: using malicious javascript to insert sneaky text into pasted terminal commands](http://boingboing.net/2016/05/25/pastejacking-using-malicious.html)
-3.[Security Week: Pastejacking attack allows hackers execute malicious code](http://www.securityweek.com/pastejacking-attack-allows-hackers-execute-malicious-code)
-4.[Graham Cluley: researcher warns pastejacking hack attacks targeting users clipboards](https://www.grahamcluley.com/2016/05/researcher-warns-pastejacking-hack-attacks-targeting-users-clipboards/)
-5.[Security Affairs: Pastejack attack](http://securityaffairs.co/wordpress/47665/hacking/pastejack-attack.html)
-6.[IBM Security Intelligence: Pastejacking the clipboard copy concern](https://securityintelligence.com/news/pastejacking-the-clipboard-copy-concern/)
-7.[Sophos Naked Security: Why you cant trust things you cut and paste from web pages](https://nakedsecurity.sophos.com/2016/05/26/why-you-cant-trust-things-you-cut-and-paste-from-web-pages/)
+1. [Softpedia: Pastejacking attack overides your clipboard to trick you into running evil code](http://news.softpedia.com/news/pastejacking-attack-overrides-your-clipboard-to-trick-you-into-running-evil-code-504420.shtml)
+2. [Boing Boing: Pastejacking: using malicious javascript to insert sneaky text into pasted terminal commands](http://boingboing.net/2016/05/25/pastejacking-using-malicious.html)
+3. [Security Week: Pastejacking attack allows hackers execute malicious code](http://www.securityweek.com/pastejacking-attack-allows-hackers-execute-malicious-code)
+4. [Graham Cluley: researcher warns pastejacking hack attacks targeting users clipboards](https://www.grahamcluley.com/2016/05/researcher-warns-pastejacking-hack-attacks-targeting-users-clipboards/)
+5. [Security Affairs: Pastejack attack](http://securityaffairs.co/wordpress/47665/hacking/pastejack-attack.html)
+6. [IBM Security Intelligence: Pastejacking the clipboard copy concern](https://securityintelligence.com/news/pastejacking-the-clipboard-copy-concern/)
+7. [Sophos Naked Security: Why you cant trust things you cut and paste from web pages](https://nakedsecurity.sophos.com/2016/05/26/why-you-cant-trust-things-you-cut-and-paste-from-web-pages/)
 8. [The Register: Pastejack attack turns your clipboard into a threat](http://www.theregister.co.uk/2016/05/25/pastejack%5fattack%5fturns%5fyour%5fclipboard%5finto%5fa%5fvector/?mt=1465079900698)
 9. [Cyber Defense Magazine: Pastejacking attack relies on your clipboard as an attack vector](http://www.cyberdefensemagazine.com/pastejacking-attack-relies-on-your-clipboard-as-an-attack-vector/)
 10. [Windows It Pro: Truffle Hog Finds Security Keys Hidden Github Code](http://windowsitpro.com/security/truffle-hog-finds-security-keys-hidden-github-code)
