@@ -21,3 +21,6 @@
 18. [Gbhackers: New attack called xssjacking discovered that combined of clickjacking pastejacking and self-xss attacks](https://gbhackers.com/new-attack-called-xssjackingdiscovered-that-combined-of-clickjacking-pastejacking-and-self-xss-attacks/)
 19. [IEEE: Mobile Forensics](http://spectrum.ieee.org/tech-talk/telecom/security/mobile-forensics-ceo-proposes-controversial-publicprivate-key-access-for-smartphones)
 20. [IEEE: Five ways experts think the FBI might have hacked the san bernadino iphone](http://spectrum.ieee.org/tech-talk/telecom/security/5-ways-experts-think-the-fbi-might-have-hacked-the-san-bernardino-iphone)
+21. [Security Boulevard: Learn What New Domain Validation Means For Your Business](https://securityboulevard.com/2021/05/learn-what-the-new-domain-validation-requirements-mean-for-your-business/)
+22. [F5: SSL Certificates Behaving Badly](https://devcentral.f5.com/s/articles/lightboard-lessons-ssl-certificates-behaving-badly-32347)
+23. [ZDNet: Google Cloud: Here are the six 'best' vulnerabilities security researchers found last year] (https://www.zdnet.com/article/google-cloud-here-are-the-six-best-vulnerabilities-security-researchers-found-last-year/)
